@@ -1,0 +1,54 @@
+{
+  "name": "phantomjs-prebuilt",
+  "version": "2.1.16",
+  "keywords": [
+    "phantomjs",
+    "headless",
+    "webkit"
+  ],
+  "description": "Headless WebKit with JS API",
+  "homepage": "https://github.com/Medium/phantomjs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Medium/phantomjs.git"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Dan Pupius",
+    "email": "dan@obvious.com",
+    "url": "http://pupius.co.uk"
+  },
+  "maintainers": [
+    {
+      "name": "Dan Pupius",
+      "email": "dan@medium.com",
+      "web": "http://pupius.co.uk/"
+    },
+    {
+      "name": "Nick Santos",
+      "email": "nick@medium.com",
+      "web": "http://nick-santos.com/"
+    }
+  ],
+  "main": "lib/phantomjs",
+  "bin": {
+    "phantomjs": "./bin/phantomjs"
+  },
+  "scripts": {
+    "install": "node install.js",
+    "test": "nodeunit --reporter=minimal test/tests.js && eslint ."
+  },
+  "dependencies": {
+    "es6-promise": "^4.0.3",
+    "extract-zip": "^1.6.5",
+    "fs-extra": "^1.0.0",
+    "hasha": "^2.2.0",
+    "kew": "^0.7.0",
+    "node-fetch": "^3.3.2",
+    "which": "^1.2.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "webdriverio": "^8.24.6"
+  }
+}
